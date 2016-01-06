@@ -1,5 +1,5 @@
 {
-	"name": "ajshort/silverstripe-elastica",
+	"name": "silverstripe-australia/elastica",
 	"description": "Provides Elastic Search integration for SilverStripe DataObjects using Elastica",
 	"type": "silverstripe-module",
 	"homepage": "http://github.com/ajshort/silverstripe-elastica",
@@ -9,19 +9,28 @@
 		{
 			"name": "Andrew Short",
 			"email": "andrewjshort@gmail.com"
+		},
+		{
+			"name": "Marcus Nyeholt",
+			"email": "marcus@silverstripe.com.au"
 		}
 	],
 	"support": {
 		"issues": "http://github.com/ajshort/silverstripe-elastica/issues"
 	},
 	"require": {
-		"ruflin/elastica": "dev-master",
-		"silverstripe/framework": ">=3.1"
+		"ruflin/elastica": "2.3.1",
+		"silverstripe/cms": ">=3.1",
+		"silverstripe/tagfield": "~1.2",
+		"briceburg/silverstripe-pickerfield" : "dev-master"
 	},
 	"autoload": {
 		"psr-0": { "SilverStripe\\Elastica": "src/" }
 	},
 	"extra": {
 		"installer-name": "elastica"
+	},
+	"replace": {
+		"ajshort/silverstripe-elastica": "self.version"
 	}
 }
